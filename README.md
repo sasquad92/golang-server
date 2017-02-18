@@ -1,4 +1,4 @@
-# Golang example REST server #
+# Golang simple REST server #
 
 In this project I'm going to build a REST server using golang. It will be used by mobile client.
 
