@@ -1,29 +1,17 @@
-# README #
+# Golang example REST server #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+In this project I'm going to build a REST server using golang. It will be used by mobile client.
 
 ### What is this repository for? ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+Just for training!
 
-### How do I get set up? ###
+### How to compile ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+First of all make sure You have installed git.
+[how to install git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
-### Contribution guidelines ###
+Next, You have to install golang.
+[how to install golang](https://golang.org/doc/install)
 
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+After that just clone this repo.
