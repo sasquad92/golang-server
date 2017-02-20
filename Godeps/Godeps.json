@@ -4,9 +4,40 @@
 	"GodepVersion": "v79",
 	"Deps": [
 		{
+			"ImportPath": "github.com/auth0-samples/auth0-golang-web-app/01-Login/app",
+			"Rev": "6f1690e175456ae22ab4d9b7510d1bef2b58024e"
+		},
+		{
+			"ImportPath": "github.com/gorilla/context",
+			"Comment": "v1.1-7-g08b5f42",
+			"Rev": "08b5f424b9271eedf6f9f0ce86cb9396ed337a42"
+		},
+		{
 			"ImportPath": "github.com/gorilla/mux",
 			"Comment": "v1.3.0-1-g94e7d24",
 			"Rev": "94e7d24fd285520f3d12ae998f7fdd6b5393d453"
+		},
+		{
+			"ImportPath": "github.com/gorilla/securecookie",
+			"Comment": "v1.1-5-gfa5329f",
+			"Rev": "fa5329f913702981df43dcb2a380bac429c810b5"
+		},
+		{
+			"ImportPath": "github.com/gorilla/sessions",
+			"Comment": "v1.1-2-g83c8db3",
+			"Rev": "83c8db3bdc9be789e57e3756ffbcffd2d7d40176"
+		},
+		{
+			"ImportPath": "golang.org/x/net/context",
+			"Rev": "6b27048ae5e6ad1ef927e72e437531493de612fe"
+		},
+		{
+			"ImportPath": "golang.org/x/oauth2",
+			"Rev": "b9780ec78894ab900c062d58ee3076cd9b2a4501"
+		},
+		{
+			"ImportPath": "golang.org/x/oauth2/internal",
+			"Rev": "b9780ec78894ab900c062d58ee3076cd9b2a4501"
 		}
 	]
 }
