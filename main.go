@@ -3,10 +3,9 @@ package main
 import (
 	"fmt"
 	"net/http"
+	"os"
 
 	"bicbucket.org/sasquad/golangserver/callback"
-
-	"os"
 
 	"github.com/gorilla/mux"
 )
@@ -19,7 +18,9 @@ func main() {
 	r.HandleFunc("/login", LoginHandler)
 	r.HandleFunc("/token", TokenHandler)
 	r.HandleFunc("/callback", callback.CallbackHandler)
+	r.HandleFunc("/body", BodyHandler)
 
 	fmt.Println("Starting server...")
 	http.ListenAndServe(":"+port, r)
+	// http.ListenAndServe(":5000", r)
 }
