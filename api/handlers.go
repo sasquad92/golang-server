@@ -1,4 +1,4 @@
-package main
+package api
 
 import (
 	"encoding/json"
@@ -7,12 +7,12 @@ import (
 	"net/http"
 )
 
-type loginData struct {
+type LoginData struct {
 	Username string `json:"username"`
 	Password string `json:"password"`
 }
 
-type accountData struct {
+type AccountData struct {
 	Username string `json:"username"`
 	Password string `json:"password"`
 	Name     string `json:"name"`
@@ -21,7 +21,7 @@ type accountData struct {
 	//...
 }
 
-type responseData struct {
+type ResponseData struct {
 	Token string `json:"token"`
 	Error string `json:"error"`
 }
@@ -34,8 +34,8 @@ func HomeHandler(rw http.ResponseWriter, r *http.Request) {
 }
 
 func LoginHandler(rw http.ResponseWriter, r *http.Request) {
-	var login loginData
-	var response responseData
+	var login LoginData
+	var response ResponseData
 
 	decoder := json.NewDecoder(r.Body)
 	err := decoder.Decode(&login)
