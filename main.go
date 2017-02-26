@@ -16,9 +16,9 @@ func main() {
 
 	r.HandleFunc("/", HomeHandler)
 	r.HandleFunc("/login", LoginHandler)
-	r.HandleFunc("/token", TokenHandler)
+	r.HandleFunc("/logout", LogoutHandler)
+	r.HandleFunc("/createAccount", CreateAccountHandler)
 	r.HandleFunc("/callback", callback.CallbackHandler)
-	r.HandleFunc("/body", BodyHandler)
 
 	fmt.Println("Starting server...")
 	http.ListenAndServe(":"+port, r)
